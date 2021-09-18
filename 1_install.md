@@ -1,4 +1,4 @@
-# Install
+# Install for Windows with WSL2
 
 ## Note for Windows Users
 
@@ -11,6 +11,7 @@ For windows users, install [WSL](https://docs.microsoft.com/en-us/windows/wsl/in
 * Python: See below for Python 3.6+ on WSL.
 
 * Install yosys, Symbiyosys, yices2, and z3.
+  * Install the following in a location relative to the WSL partitioned directories such as /home/<uname>/wherever-fpga-tools
   * `sudo apt install curl`
   * Now follow the [instructions to install these](https://symbiyosys.readthedocs.io/en/latest/install.html). It is highly recommended to follow those instructions, especially for yosys since the git repo has many more fixes than the official release.
   * Note that when you see `-j$(nproc)`, it means to specify the number of processors your CPU has. You can't really go wrong by using `-j4`. You can go higher if you know you have more.
